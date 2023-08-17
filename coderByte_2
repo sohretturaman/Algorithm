@@ -1,1 +1,19 @@
-coderbyte 2 : 
+coderbyte 2 : First Reverse
+Have the function FirstReverse(str) take the str parameter being passed and return the string in reversed order. 
+For example: if the input string is "Hello World and Coders" then your program should return the string sredoC dna dlroW olleH.
+
+function FirstReverse(str) { 
+let newArray = ''; 
+  // code goes here  
+  for ( let i = str.length-1; i>=0; i--){
+     newArray = newArray+str[i];
+  }
+  return newArray; 
+
+}
+   
+// keep this function call here 
+let str = 'hello World I am maria '
+const result = FirstReverse(str)
+console.log('result',result)
+console.log(FirstReverse(readline()));
