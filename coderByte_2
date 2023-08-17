@@ -13,7 +13,5 @@ let newArray = '';
 }
    
 // keep this function call here 
-let str = 'hello World I am maria '
-const result = FirstReverse(str)
-console.log('result',result)
+
 console.log(FirstReverse(readline()));
