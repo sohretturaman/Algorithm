@@ -1,0 +1,22 @@
+function staircase(n) {
+    
+    for (let i = 1; i <= n; i++) {
+    let spaces = '';
+    let  hashe = '';
+
+    for (let j = 1; j <= n - i; j++) {
+        spaces += ' ';
+    }
+
+    for (let k = 1; k <= i; k++) {
+        hashe += '#';
+    }
+
+    console.log(spaces + hashe);
+}
+}
+
+// for n = 6 ,  i and j values starts at the same time . for the first line j and and i values equals to 1 or (zero)  then we need 5 spaces and
+//1 hashe , so we put n-i spaces in second for loop which include j value, 
+// then for the second line  we need 4 spaces and 2 hashes for that we put n-i beacause i =2 anymore and with third loop which is incuding k , 
+// should put 2 hashes , it means hashe's count is equal to i value , so we put i hashe  , that means , (k = 1 ; k<=i ; k++) 
